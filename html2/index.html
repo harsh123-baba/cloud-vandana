@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form Cloud vandana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Survey form</h2>
+        <div class="form">
+            <form action="" id="survey-form" class="survey-form" onsubmit="submitFunc(event)">
+                <div class="row1">
+                    <div class="field">
+                        <div>Name</div>
+                        <input type="text" id = "name" >
+                    </div>
+                    <div class="field">
+                        <div>Email</div>
+                        <input type="email" id = "email" class="fields">
+                    </div>
+                </div>
+                <div class="row2">
+                    <div>Is this first time You are using our product & service</div>
+                   <input type="radio" id = "row2-yes" name="row2" value = "yes" checked>Yes
+                   <input type="radio" id = "row2-no" name="row2" value = "no">No
+
+                </div>
+                <div class="row3">
+                    <div>Would you suggestion to your friends and colleague?</div>
+                   <input type="radio" id = "row3-yes" name="row3" value = "yes" checked>Yes
+                   <input type="radio" id = "row3-no" name="row3" value = "no">No
+                </div>
+                <div class="row4">
+                    <div>How satisfied are you with our comany overall?</div>
+                    <input type="radio" id = "row4-satisfied" name="row4" value = "satisfied" checked>Satified
+                    <input type="radio" id = "row4-undecided" name="row4" value = "undecided">Undecided
+                   <input type="radio" id = "row4-unsatisfied"name="row4" value = "unsatisfied">Unsatisfied
+                </div>
+
+                <div class="row5">
+                    <div>Do you have suggestion to improve our service?</div>
+                    <textarea name="suggestion" id="suggestion" cols="30" rows="10"></textarea>
+                </div>
+                <div class="action-btn">
+                    <button class="submit-btn" type="submit" onclick="submitFunc(event)">Submit</button>
+                    <button class="reset-btn" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="output-param">
+                Name : <span id="modal-name"></span>
+              </div>
+              <div class="output-param">
+                Email : <span id="modal-email"></span>
+              </div>
+              <div class="output-param">
+                Is this first time You are using our products & service? : <span id="modal-q1"></span>
+              </div>
+              <div class="output-param">
+                Would you suggestion to your friends and collegue? : <span id="modal-q2"></span>
+              </div>
+              <div class="output-param">
+                How satified are you with our company overall? : <span id="modal-q3"></span>
+              </div>
+              <div class="output-param">
+                Do you have suggetion to improve our service? : <span id="modal-q4"></span>
+              </div>
+            </div>
+        </div> 
+
+
+
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

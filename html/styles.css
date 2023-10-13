@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(212, 205, 205);
+}
+
+.container{
+    display: flex;
+    background-color: yellow;
+    margin: auto;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.cal-left{
+    width: 82%;
+    background: white;
+}
+
+.result-area{
+    padding-left: 10px;
+    height: 39px;
+}
+
+
+.container .cal-right{
+    width: 18%;
+    color: white;
+    text-align: center;
+    background: grey;
+}
+
+.nums-grp{
+    display: flex;
+}
+.operation-area{
+    display: grid;
+}
+
+.nums-grp button{
+    width: 40%;
+    border: none;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    cursor: pointer;
+    height: 60px;
+}
+
+#ac-button{
+    background: aqua;
+    height: 60px !important;   
+}
+.operation-area button{
+    border: none;
+    height: 59px;
+    cursor: pointer;
+    color: white;
+    background : grey;
+}
